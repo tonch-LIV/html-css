@@ -3,5 +3,5 @@
 
 design practice
 
-- [index](html-css\index.html)
-- [about](html-css\about.html)
+- [index](index.html)
+- [about](about.html)
