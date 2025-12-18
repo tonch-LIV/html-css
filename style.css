@@ -1,4 +1,50 @@
 /* comment */
-/* p {
-    color: red;
-} */
+
+.heads {
+    font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal
+}
+
+ body {
+    background-color: #ff9933;
+    text-align: center;
+    margin-top: 80px
+ }
+ header { 
+    text-align: center;
+ } /*not working as intended*/
+
+ .bubble {
+    background-color: yellow;
+    width: 50%;
+    margin: 20px auto;
+    border-radius: 15px;
+ }
+
+ .landing {
+    display: flex; /* puts images side by side */
+    gap: 30px;   /* space between images */
+    margin: 20px;
+}
+
+ .landing img {
+    width: 100%;        /* make images fill space proportionally */
+    max-width: 50%;      /* for three across, adjust for more/fewer */
+    height: auto;       /* keeps aspect ratio */
+ }
+
+ .gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 2fr);      /* 3 columns */
+    gap: 30px;
+    margin-left: 300px;
+    margin-right: 300px;
+ }
+
+ .gallery img {
+    width: 100%;
+    height: auto;   /* keeps aspect ratio */
+    object-fit: contain; /* ensures full image is visible */
+}
+ 
