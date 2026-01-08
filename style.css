@@ -1,5 +1,33 @@
 /* comment */
 
+header { 
+    text-align: center;
+} /*not working as intended*/
+
+body {
+    background-color: #e67300;
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
+
+p {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+ul {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
 .button {
     color: #000000;
     font-size: 16px;
@@ -31,67 +59,38 @@
     font-style: normal
 }
 
- body {
-    background-color: #e67300;
-    text-align: center;
-    margin-top: 80px;
-    margin-bottom: 80px;
- }
-
- header { 
-    text-align: center;
- } /*not working as intended*/
-
- p {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
- }
-
-
- .bubble {
+.bubble {
     background-color: #ff9933;
     width: 50%;
     margin: 20px auto;
     border-radius: 15px;
     padding: 30px;
- }
+}
 
- .landing {
+.landing {
     display: flex; /* puts images side by side */
     gap: 30px;   /* space between images */
     margin: 20px;
 }
 
- .landing img {
+.landing img {
     width: 100%;        /* make images fill space proportionally */
     max-width: 50%;      /* for three across, adjust for more/fewer */
     height: auto;       /* keeps aspect ratio */
- }
+}
 
- .gallery {
+.gallery {
     display: grid;
     grid-template-columns: repeat(2, 2fr);      /* 3 columns */
     gap: 30px;
     margin-left: 300px;
     margin-right: 300px;
- }
+}
 
- .gallery img {
+.gallery img {
     width: 100%;
     height: auto;   /* keeps aspect ratio */
     object-fit: contain; /* ensures full image is visible */
-}
- 
-h3 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-ul {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-size: 18px;
-    font-weight: bold;
 }
 
 .green {
