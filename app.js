@@ -33,18 +33,24 @@
             const choice = flavor ? flavor.toLowerCase().trim() : "";
 
             if (choice === "sweet") {
-            borderColor = "#0000e6";     // sweet → blue
+            borderColor = "#0000e6";     // sweet -> blue
             } else if (choice === "spicy") {
-            borderColor = "crimson";    // spicy → reddish color
+            borderColor = "crimson";    // spicy -> reddish color
             } else if (choice === "mild") {
-            borderColor = "green";   // mild → green
+            borderColor = "green";   // mild -> green
             } else {
-            borderColor = "#5c5c8a";     // other →  neutral color
+            borderColor = "#5c5c8a";     // other ->  neutral color
             }
             // Apply the border color to the element
             tasty.style.borderColor = borderColor; // change style property dynamically :contentReference[oaicite:1]{index=1}
         }
     };
+
+    function sauceRating() {
+        let rating = null;
+
+    
+    }
 
 entryQuestion();
 sauceFlavor();
