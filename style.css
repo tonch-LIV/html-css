@@ -26,6 +26,8 @@ ul {
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-size: 18px;
     font-weight: bold;
+    list-style-type: none;
+    /* text-align: right; */
 }
 
 .button {

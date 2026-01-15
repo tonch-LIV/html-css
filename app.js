@@ -1,9 +1,9 @@
 'use strict'
 // comment
 
-// This runs when the page has finished loading
+// This runs when the page has finished loading; (was for used "window.onload" delay type element.)
     function entryQuestion() {
-            // show confirm dialog with a question
+            // show confirm dialog pop-up with a question
         let likesFlavor = confirm("Do you like flavor in your life?");
 
         if (likesFlavor) {
@@ -16,15 +16,15 @@
     };
 
     function sauceFlavor() {
- // second prompt, intteractive question
+ // second prompt, interactive question with dynamic changes based on user text input
         const flavor = prompt("What kind of sauce do you prefer to accompany your food?", "Sweet? Spicy? Mild? or other?");
 
         const tasty = document.getElementById("flavor");
 
-        if (tasty) { // ensures the element exists
+        if (tasty) { // output from user input
             if (flavor && flavor.trim() !== "") {
                 tasty.textContent = `You like your food ${flavor}.`;
-            } else {
+            } else { // output if user presses cancel on prompt, "bypassing text input"
                 tasty.textContent = "Don't be afraid to try something new!";
             }
 
@@ -33,15 +33,15 @@
             const choice = flavor ? flavor.toLowerCase().trim() : "";
 
             if (choice === "sweet") {
-            borderColor = "#0000e6";     // e.g., sweet → light pink
+            borderColor = "#0000e6";     // sweet → blue
             } else if (choice === "spicy") {
-            borderColor = "crimson";    // spicy → a reddish color
+            borderColor = "crimson";    // spicy → reddish color
             } else if (choice === "mild") {
-            borderColor = "green";   // mild → yellowish
+            borderColor = "green";   // mild → green
             } else {
-            borderColor = "#5c5c8a";     // other → default neutral color
+            borderColor = "#5c5c8a";     // other →  neutral color
             }
-            // Apply the background color to the element
+            // Apply the border color to the element
             tasty.style.borderColor = borderColor; // change style property dynamically :contentReference[oaicite:1]{index=1}
         }
     };
