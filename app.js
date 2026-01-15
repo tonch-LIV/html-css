@@ -99,3 +99,4 @@
 
 entryQuestion();
 sauceFlavor();
+sauceRating();
