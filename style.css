@@ -59,6 +59,11 @@ ul {
     font-style: normal
 }
 
+#flavor {
+    border: 4px dashed black;
+    padding: 10px;
+}
+
 .bubble {
     background-color: #ff9933;
     width: 50%;
