@@ -70,33 +70,29 @@
                 break; // stops loop after valid input from user
             }
 
-            // alert("woah!! how many onions? let's keep it between 1 and 5, if you would..."); // displays after invalid input from user, out of range or not integer/number
-
-            // displays on 3rd and final attempt
             if (attempt === maxAttempts) {
                 alert ("You've run out of onions for the sauce, friend...");
-                return;
+                return; // displays on 3rd and final attempt after exceeding tries
             }
 
-            const container = document.getElementById("rateImg");
-
-
-            if (container) {
-                container.innerHTML = ""; // clear previous content
-                
-                for (let i = 0; i < rating; i++) {
-                    let img = document.createElement("img");
-                    img.src = "salsa_images/onion.png";
-                    img.alt = "onion drawing, color";
-                    img.style.width = "60px"; // otptional sizing
-                    img.style.margin = "5px" //spacing
-                    container.appendChild(img);
-                }
-            }
+             alert("woah!! how many onions? let's keep it between 1 and 5, if you would..."); // displays after invalid input from user, out of range or not integer/number
         }
 
+        const container = document.getElementById("rateImg");
+        if (container) {
+            container.innerHTML = ""; // clear previous content if multiple ratings are attempted
+            
+            for (let i = 0; i < rating; i++) {
+                let img = document.createElement("img");
+                img.src = "salsa_images/onion.png";
+                img.alt = "onion drawing, color";
+                img.style.width = "60px"; // optional sizing
+                img.style.margin = "5px"; //spacing
+                container.appendChild(img);
+            }
+        }
     }
 
 entryQuestion();
-sauceFlavor();
+// sauceFlavor();
 // sauceRating();
