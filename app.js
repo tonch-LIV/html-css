@@ -56,7 +56,7 @@
             );
 
             if (userInput === null) {
-                alert("No onions... ),:");
+                alert("No onions... )':");
                 return; // stops loop if user does not input
             }
 
@@ -77,21 +77,21 @@
                 alert ("You've run out of onions for the sauce, friend...");
                 return;
             }
-        }
 
-        const container = document.getElementById("rateImg");
+            const container = document.getElementById("rateImg");
 
 
-        if (container) {
-            container.innerHTML = ""; // clear previous content
-            
-            for (let i = 0; i < rating; i++) {
-                let img = document.createElement("img");
-                img.src = "onion.png";
-                img.alt = "onion drawing, color";
-                img.style.width = "60px"; // otptional sizing
-                img.style.margin = "5px" //spacing
-                container.appendChild(img);
+            if (container) {
+                container.innerHTML = ""; // clear previous content
+                
+                for (let i = 0; i < rating; i++) {
+                    let img = document.createElement("img");
+                    img.src = "salsa_images/onion.png";
+                    img.alt = "onion drawing, color";
+                    img.style.width = "60px"; // otptional sizing
+                    img.style.margin = "5px" //spacing
+                    container.appendChild(img);
+                }
             }
         }
 
@@ -99,4 +99,4 @@
 
 entryQuestion();
 sauceFlavor();
-sauceRating();
+// sauceRating();
